@@ -157,6 +157,9 @@ var fight = function(enemyName) {
  
 
 
+
+
+
 var startGame = function(){
  for(var i = 0; i < enemyNames.length; i++) {
    //reset player stats
@@ -182,7 +185,7 @@ var startGame = function(){
         break;
       }
     }
-    startGame(); 
+    endGame(); 
  }; 
 
  var endGame = function()
