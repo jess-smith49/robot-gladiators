@@ -196,19 +196,21 @@ var startGame = function(){
    else {
      window.alert("You've lost your robot in battle.");
    }
+   // ask player if they'd like to play again
+        var playAgainConfirm = window.confirm("Would you like to play again?");
+
+        if (playAgainConfirm) {
+          // restart the game
+          startGame();
+        } 
+        else {
+          window.alert("Thank you for playing Robot Gladiators! Come back soon!");
+        }
  };
 
- // ask player if they'd like to play again
-var playAgainConfirm = window.confirm("Would you like to play again?");
+ startGame();
 
-    if (playAgainConfirm) {
-      // restart the game
-      startGame();
-    } 
-    else {
-      window.alert("Thank you for playing Robot Gladiators! Come back soon!");
-    }
- //startGame();
+
 
 
 
